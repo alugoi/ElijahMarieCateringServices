@@ -8,9 +8,9 @@ html,body{
 #wrapper{
 	margin-top:50px;
 }
-.btn-primary{
+/*.btn-primary{
 	border-radius:20px;
-}
+}*/
 footer{
 	background: #222;
 	color:white;
@@ -72,3 +72,16 @@ footer a{
 	margin-bottom:20px;
 }
 
+.text-inside{
+	position:relative;
+
+}
+.top-left{
+	position:absolute;
+	background-color: transparent;
+	height:50px;
+	border:1px solid transparent;
+}
+.top-left>img{
+	height:100%;
+}
