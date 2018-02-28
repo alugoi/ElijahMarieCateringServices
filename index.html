@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale, user-scalable=0">
 	<meta http-equiv="X-UA-Compatible" content="IE-Edge">
-	<title>Elijash Marie Eatery</title>
+	<title>Elijah Marie Eatery</title>
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<!--font awesome library-->
@@ -15,23 +15,27 @@
 	<header>
 		<img src="asset/banner.jpg" class="img-responsive" width="100%">
 	</header><!--end of header-->
-	<nav class="navbar navbar-inverse">
-		<div class="container-fluid">
-		    <div class="navbar-header">
-		      	<a class="navbar-brand" href="#">Elijah Marie Eatery</a>
-		    </div>
-		    <ul class="nav navbar-nav">
-		      <li class="active"><a href="#">Home</a></li>
-		      <li><a href="gallery-page.html">Gallery</a></li>
-		      <li><a href="menu-page.html">Menu</a></li>
-		      <li><a href="contact-page.html">Contact</a></li>
-		    </ul>
-		    <ul class="nav navbar-nav navbar-right">
-		      <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-		      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-		    </ul>
-		 </div>
-	</nav><!--end nav bar-->
+		<nav class="navbar navbar-inverse" id="nav">
+			<div class="container-fluid">
+				<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>                        
+				</button>
+					<a class="navbar-brand" href="#">WebSiteName</a>
+				</div>
+				<div class="collapse navbar-collapse" id="myNavbar">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="#">Home</a></li>
+						<li><a href="gallery-page.html">Gallery</a></li>
+						<li><a href="menu-page.html">Menu</a></li>
+						<li><a href="contact-page.html">Contact</a></li
+						<li class="dropdown">
+					</ul>
+				</div>
+			</div>
+		</nav><!--end nav bar-->
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-md-9">
@@ -171,5 +175,17 @@
 	</footer><!--end of footer-->
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript">
+	// var nav =document.getElementById("nav");
+	// window.onscroll=function(){
+	// 	if(window.pageYOffset>400){
+	// 		nav.style.position="fixed";
+	// 		nav.style.position="absolute";
+	// 	}
+	// 	else{
+
+	// 	}
+	// }
+</script>
 </body>
 </html>

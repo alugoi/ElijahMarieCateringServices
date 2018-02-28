@@ -20,64 +20,82 @@
 	</header><!--end of header-->
 	<nav class="navbar navbar-inverse">
 		<div class="container-fluid">
-		    <div class="navbar-header">
-		      	<a class="navbar-brand" href="#">Elijah Marie Eatery</a>
-		    </div>
-		    <ul class="nav navbar-nav">
-		      <li><a href="index.html">Home</a></li>
-		      <li class="active"><a href="gallery-page.html">Gallery</a></li>
-		      <li><a href="menu-page.html">Menu</a></li>
-		    </ul>
-		    <ul class="nav navbar-nav navbar-right">
-		      <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-		      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-		    </ul>
-		 </div>
+			<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>                        
+			</button>
+				<a class="navbar-brand" href="#">WebSiteName</a>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="#">Home</a></li>
+					<li><a href="gallery-page.html">Gallery</a></li>
+					<li><a href="menu-page.html">Menu</a></li>
+					<li><a href="contact-page.html">Contact</a></li
+					<li class="dropdown">
+				</ul>
+			</div>
+		</div>
 	</nav><!--end nav bar-->
 	<div class="container-fluid gallery-page">
-		<div class="row'">
+		<div class="row">
 			<div class="col-md-3">
-				<a href="#"><img src="asset/image1.jpeg" class="img-responsive"></a>
+				<img src="asset/image1.jpeg" class="img-responsive myGallery">
 			</div>
 			<div class="col-md-3">
-				<a href="#"><img src="asset/image1.jpeg" class="img-responsive"></a>
+				<img src="asset/image1.jpeg" class="img-responsive myGallery">
 			</div>
 			<div class="col-md-3">
-				<a href="#"><img src="asset/image1.jpeg" class="img-responsive"></a>
+				<img src="asset/image1.jpeg" class="img-responsive myGallery">
 			</div>
 			<div class="col-md-3">
-				<a href="#"><img src="asset/image1.jpeg" class="img-responsive"></a>
-			</div>
-		</div>
-		<div class="row'">
-			<div class="col-md-3">
-				<a href="#"><img src="asset/image1.jpeg" class="img-responsive"></a>
-			</div>
-			<div class="col-md-3">
-				<a href="#"><img src="asset/image1.jpeg" class="img-responsive"></a>
-			</div>
-			<div class="col-md-3">
-				<a href="#"><img src="asset/image1.jpeg" class="img-responsive"></a>
-			</div>
-			<div class="col-md-3">
-				<a href="#"><img src="asset/image1.jpeg" class="img-responsive"></a>
+				<img src="asset/image1.jpeg" class="img-responsive myGallery">
 			</div>
 		</div>
-		<div class="row'">
+
+		<div class="row">
 			<div class="col-md-3">
-				<a href="#"><img src="asset/image1.jpeg" class="img-responsive"></a>
+				<img src="asset/image1.jpeg" class="img-responsive myGallery">
 			</div>
 			<div class="col-md-3">
-				<a href="#"><img src="asset/image1.jpeg" class="img-responsive"></a>
+				<img src="asset/image1.jpeg" class="img-responsive myGallery">
 			</div>
 			<div class="col-md-3">
-				<a href="#"><img src="asset/image1.jpeg" class="img-responsive"></a>
+				<img src="asset/image1.jpeg" class="img-responsive myGallery">
 			</div>
 			<div class="col-md-3">
-				<a href="#"><img src="asset/image1.jpeg" class="img-responsive"></a>
+				<img src="asset/image1.jpeg" class="img-responsive myGallery">
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="col-md-3">
+				<img src="asset/image1.jpeg" class="img-responsive myGallery">
+			</div>
+			<div class="col-md-3">
+				<img src="asset/image1.jpeg" class="img-responsive myGallery">
+			</div>
+			<div class="col-md-3">
+				<img src="asset/image1.jpeg" class="img-responsive myGallery">
+			</div>
+			<div class="col-md-3">
+				<img src="asset/image1.jpeg" class="img-responsive">
 			</div>
 		</div>
 	</div><!--end of container-fluid-->
+	<div class="modal fade" role="dialog" id="myGallery">
+		<div class="modal-dialog"></div>
+		<div class="modal-content">
+			<div class="modal-body text-center">
+				<button type="button" class="close" data-dismiss="modal">
+					<span class="glyphicon glyphicon-remove"></span>
+				</button>
+				<img src="" id="modal-img">
+			</div>
+		</div>
+	</div><!--end of modal image-->
 	<hr>
 	<footer>
       	<div class="container-fluid text-center">
@@ -88,5 +106,15 @@
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/customize.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('.myGallery').click(function(){
+			var src=$(this).attr('src');
+			$('#modal-img').attr('src',src);
+			$('#myGallery').modal('show');
+		});
+	});
+</script>
+
 </body>
 </html>
