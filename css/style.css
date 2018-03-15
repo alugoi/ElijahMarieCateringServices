@@ -29,7 +29,23 @@ footer a{
 }
 .navbar-inverse{
 	border-radius: 0px;
+	padding:0px;
+	margin:0px;
+	background-color:#000000cc;
+	border-bottom:2px solid #ef5438;
+	
 }
+.navbar-inverse .navbar-nav>li>a{
+	color:white;
+}
+.navbar-inverse .navbar-nav>li>a:hover{
+	color:#ef5438;
+}
+.navbar-inverse .navbar-nav>.active>a{
+	color:#ffc3a3;
+}
+
+
 .gallery-page>div>div>img{
 	padding:10px 0;
 	border-radius: 5px;
@@ -91,4 +107,106 @@ footer a{
 	filter:grayscale(0);
 	cursor: pointer;
 	transform: scale(1.1);
+}
+
+/*.carousel-header{
+	display:block;
+	text-align:center;
+	background-color: green;
+	padding:0px;
+	margin:0px;
+	background-image: url(../asset/banner/banner1.jpg);
+}*/
+#myCarousel{
+	background-color: red;
+	margin:0px;
+	padding:0px;
+}
+#myCarousel .centered{
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align:center;
+    color:#fff;
+    width:100%;
+
+}
+.container .jumbotron, .container-fluid .jumbotron{
+	background: none;
+}
+
+
+#myCarousel .centered>h1, #myCarousel .centered>p{
+	font-family: 'Cantata One', serif;
+	background: #000000cc;
+	padding:10px;
+}
+.btn-a{
+	background: #ef5438;
+	color:#fff;
+	border:0px;
+}
+.btn-a>span{
+	display:none;
+}
+
+.btn-a:hover{
+	background: #333;
+	color:#fff;
+	transition: 1s;
+}
+.gap{
+	height:100px;
+}
+.gap-header{
+	height:50px;
+}
+.img-responsive{
+	width:100%;
+	display: block;
+}
+.box-img{
+	margin-bottom:20px;
+	text-align:center;
+}
+.box-img>img{
+	border-bottom:5px solid #ef5438;
+	margin-bottom:30px;
+}
+.box-img>h4{
+	color:#ef5438;
+	font-family: 'Open Sans';
+}
+#upcoming-events{
+	background-image:url('../asset/header-background-upcoming-events.jpg');
+	background-size: cover;
+	border-top:5px solid #ef5438;
+}
+#featured-dishes{
+	background-image:url('../asset/header-background-featured-dishes.jpg');
+	background-size: cover;
+	border-top:5px solid #ef5438;
+}
+.header-title-container{
+	background-color: blue;
+	padding:30px;
+	text-align:center;
+	
+
+}
+.header-title-container>h1{
+	font-family: 'Cantata One', serif;
+	font-size:250%;
+	color:#FFF;
+
+}
+.header-title-container>p{
+	font-family: 'Cantata One', serif;
+	font-size:20px;
+	color:#ffc3a3;
+}
+.menu-item-title{
+	color:#ab8c6a;
+	font-size:18px;
 }
