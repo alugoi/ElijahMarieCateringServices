@@ -101,7 +101,9 @@ footer a{
 .myGallery{
 	filter:grayscale(100%);
 	transition: .5s;
-	border-radius:5px;
+	z-index: 2;
+	padding-top:10px;
+	border-bottom:5px solid #ef5438;
 }
 .myGallery:hover{
 	filter:grayscale(0);
@@ -109,14 +111,6 @@ footer a{
 	transform: scale(1.1);
 }
 
-/*.carousel-header{
-	display:block;
-	text-align:center;
-	background-color: green;
-	padding:0px;
-	margin:0px;
-	background-image: url(../asset/banner/banner1.jpg);
-}*/
 #myCarousel{
 	background-color: red;
 	margin:0px;
@@ -209,4 +203,118 @@ footer a{
 .menu-item-title{
 	color:#ab8c6a;
 	font-size:18px;
+}
+.relative{
+	position:relative;
+}
+.text-img-right{
+	position:absolute;
+	right: 5px;
+	top:5px;
+	font-size:30px;
+	font-family: 'Open sans';
+	color:#FFF;
+	background-color: #ef5438e0;
+	border-radius:4px;
+	padding:5px 10px;
+}
+#background-panel{
+	background-image:url(../asset/banner-header.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	box-shadow: inset 1px -20px 20px 0px rgba(0, 0, 0, 0.17);
+
+}
+#background-panel>h1{
+	font-family: 'Cantata One', serif;
+	background: #000000cc;
+	text-align:center;
+	margin:100px auto 0 auto;
+	color:#FFF;
+	font-size: 50px;
+	padding:10px 0;
+	width:500px;
+}
+#background-panel>p{
+	font-family: 'Cantata One', serif;
+	background: #000000cc;
+	width:500px;
+	text-align:center;
+	margin: 5px auto 100px auto;
+	font-size: 18px;
+	color:#FFF;
+	}
+.get-in-touch{
+	color:#ef5438;
+	font-family: 'Open Sans';
+}
+
+
+
+@media screen and (max-width: 600px) {
+  #background-panel>p{
+	width:200px;
+	font-size: 12px;
+	}
+#background-panel>h1{
+
+	font-size: 20px;
+	width:200px;
+	}
+.collapse-hide{
+	display:none;
+	}
+
+}
+
+
+.pagination {
+    display: inline-block;
+}
+
+.pagination a {
+    color: black;
+
+    display:table-cell;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #ddd;
+    margin: 0 4px;
+}
+
+.pagination a.active {
+    background-color: #ef5438;
+    color: white;
+    border: 1px solid #ef5438;
+}
+
+.pagination a:hover:not(.active) {background-color: #ef5438;}
+.a-btn-left{
+	text-align:left;
+}
+.view-text{
+	background-color: #000000cc;
+	width:100%;
+	position:absolute;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	display:none;
+	color:#FFF;
+
+}
+.view-text>h4{
+	font-size:40px;
+	font-family: 'Cantata One', serif;
+}
+.hover-item{
+	cursor: pointer;
+}
+.hover-center{
+	position:absolute;
+	top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
